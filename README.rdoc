@@ -1,7 +1,7 @@
 == DaVinci Motors
 
 This is a Ruby on Rails application I developed as part of the
-{Building the Toolbelt of a Junior Ruby on Rails Engineer}[http://www.davincicoders.com/programs#level_2]
+{Building the Toolbelt of a Junior Ruby on Rails Engineer}[http://www.davincicoders.com/rubyonrailscourse/]
 class I took in the Fall of 2014.
 
 Features:
