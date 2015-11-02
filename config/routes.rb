@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   root 'cars#index'
 
   resources :cars
+  # resources :cars do
+  #   get :show, on: :collection
+  # end
 end
