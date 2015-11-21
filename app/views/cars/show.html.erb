@@ -1,4 +1,4 @@
-<!--<p id="notice"><%= notice %></p>-->
+<h2>View car</h2>
 
 <p>
   <strong>Make:</strong>
@@ -17,7 +17,7 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @car.price %>
+  <%= @car.price.number_to_currency %>
 </p>
 
 <%= link_to 'Edit', edit_car_path(@car) %> |

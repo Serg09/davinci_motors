@@ -93,7 +93,7 @@ feature 'Creating Cars' do
           expect(page).to have_content('$12,000')
         end
 
-        click_link 'Edit car'
+        click_link 'Edit'
 
         fill_in 'Make', with: 'Honda'
         fill_in 'Model', with: 'Accord'

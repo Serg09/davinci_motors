@@ -1,0 +1,4 @@
+AllCops:
+  Exclude:
+    - 'Guardfile'
+#    - 'cars_helper_spec.rb'

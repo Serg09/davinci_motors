@@ -7,7 +7,7 @@ class CarsController < ApplicationController
   end
 
   def show
-    # @car = Car.find(params[:id])
+    @car = Car.find(params[:id])
   end
 
   def new
@@ -44,7 +44,7 @@ class CarsController < ApplicationController
     @car = Car.find(params[:id])
     @car.destroy
     respond_to do |format|
-      format.html { redirect_to cars_path, notice: 'Car was successfully deleated.' }
+      format.html { redirect_to cars_path, notice: 'Car was successfully deleted.' }
     end
   end
 
