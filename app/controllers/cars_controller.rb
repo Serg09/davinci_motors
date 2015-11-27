@@ -33,7 +33,7 @@ class CarsController < ApplicationController
     @car = Car.find(params[:id])
     respond_to do |format|
       if @car.update(car_params)
-        format.html { redirect_to cars_path, notice: 'Car was successfully updated.' }
+        format.html { redirect_to cars_path, notice: "#{@car.year} #{@car.make} #{@car.model} updated." }
       else
         format.html { render :edit }
       end
@@ -44,7 +44,7 @@ class CarsController < ApplicationController
     @car = Car.find(params[:id])
     @car.destroy
     respond_to do |format|
-      format.html { redirect_to cars_path, notice: 'Car was successfully deleted.' }
+      format.html { redirect_to cars_path, notice: "#{@car.year} #{@car.make} #{@car.model} deleted." }
     end
   end
 
